@@ -12,25 +12,6 @@ const navItems = [
   { name: 'Regions', href: '/regions' },
 ];
 
-const services = [
-  {
-    group: 'Accounting & Audit',
-    items: [
-      { name: 'Accounting', href: '/services/accounting' },
-      { name: 'Audit & Assurance', href: '/services/audit' },
-    ],
-  },
-  {
-    group: 'Strategy & Compliance',
-    items: [
-      { name: 'Tax', href: '/services/tax' },
-      { name: 'Legal', href: '/services/legal' },
-      { name: 'Virtual CFO', href: '/services/cfo' },
-      { name: 'Business Setup', href: '/services/setup' },
-    ],
-  },
-];
-
 export default function Navbar() {
   const pathname = usePathname();
   
