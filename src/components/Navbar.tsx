@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
-import { useState } from 'react';
+
 
 const navItems = [
   { name: 'About Us', href: '/about' },
