@@ -1,11 +1,10 @@
 "use client";
   
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
-import { Briefcase, BarChart } from "lucide-react";
 import { Globe, Linkedin, Mail } from "lucide-react";
+import Image from "next/image"; // ✅ at the top
 
 export default function LandingPage() {
   return (
@@ -56,8 +55,7 @@ export default function LandingPage() {
       <section className="py-20 px-6 max-w-6xl mx-auto" id="about">
         <h2 className="text-3xl font-semibold mb-4">Who We Are</h2>
         <p className="text-lg leading-relaxed text-gray-700">
-          Nharuvi Global is a technology-driven accounting and consulting firm delivering elite-quality services across accounting, audit, compliance, and financial strategy. Backed by chartered professionals and powered by automation, we serve businesses of all sizes — from startups to global enterprises.
-        </p>
+Nharuvi Global Private Limited is a forward-thinking accounting and consulting firm committed to delivering Big Four-quality services with the agility, affordability, and innovation of a modern tech-driven practice. We specialize in providing end-to-end financial, tax, and compliance solutions to businesses of all sizes—ranging from startups and SMEs to global enterprises. Our mission is to go beyond accounting by becoming a strategic partner in your growth journey. We combine global best practices, intelligent automation, and personalized insights to help our clients navigate the complexities of local and international regulations with clarity and confidence. </p>
       </section>
 
       {/* Services */}
@@ -82,25 +80,25 @@ export default function LandingPage() {
                 desc: "Statutory, internal, and forensic audits with actionable financial insights.",
               },
               {
-                slug: "tax",
+                slug: "taxation",
                 bgText: "TAX",
                 title: "Tax & Compliance",
                 desc: "Corporate, international & indirect tax filings, representation, and planning.",
               },
               {
-                slug: "legal",
+                slug: "roc-compliance",
                 bgText: "LAW",
                 title: "Legal & Regulatory",
                 desc: "Entity law, contracts, litigation support, and government registrations.",
               },
               {
-                slug: "cfo",
+                slug: "virtual-cfo",
                 bgText: "CFO",
                 title: "Virtual CFO & Advisory",
                 desc: "Performance monitoring, MIS, budgeting, fundraising & founder strategy.",
               },
               {
-                slug: "setup",
+                slug: "registration",
                 bgText: "SET",
                 title: "Business Setup & Corporate",
                 desc: "Company formation, ROC filings, and cross-border expansion assistance.",
@@ -132,7 +130,13 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[1, 2, 3].map((_, i) => (
               <div key={i} className="bg-gray-50 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
-                <img src={`/insights/thumb-${i + 1}.jpg`} alt="" className="w-full h-44 object-cover" />
+                <Image
+  src={`/insights/thumb-${i + 1}.jpg`}
+  alt={`Insight ${i + 1}`}
+  width={500}
+  height={250}
+  className="w-full h-44 object-cover"
+/>
                 <div className="p-5">
                   <span className="text-xs uppercase text-green-600 font-semibold">Advisory</span>
                   <p className="text-sm text-gray-500 mt-1">July {10 + i}, 2025</p>
@@ -189,10 +193,10 @@ export default function LandingPage() {
             <ul className="space-y-2">
               <li><Link href="/services/accounting">Accounting</Link></li>
               <li><Link href="/services/audit">Audit & Assurance</Link></li>
-              <li><Link href="/services/tax">Taxation</Link></li>
-              <li><Link href="/services/legal">Legal</Link></li>
-              <li><Link href="/services/cfo">Virtual CFO</Link></li>
-              <li><Link href="/services/setup">Business Setup</Link></li>
+              <li><Link href="/services/taxation">Taxation</Link></li>
+              <li><Link href="/services/roc-compliance">Legal</Link></li>
+              <li><Link href="/services/virtual-cfo">Virtual CFO</Link></li>
+              <li><Link href="/services/registration">Business Setup</Link></li>
             </ul>
           </div>
           <div>

@@ -25,8 +25,9 @@ export default function RegionsPage() {
       <div className="mt-16 text-center">
         <h2 className="text-2xl font-semibold mb-2 text-gray-900">How We Deliver Globally</h2>
         <p className="text-gray-700 max-w-xl mx-auto">
-          We use secure cloud platforms, encrypted client portals, and collaborative dashboards to deliver seamless global services—whether you're based in Bengaluru or Boston.
-        </p>
+  We use secure cloud platforms, encrypted client portals, and collaborative dashboards to deliver seamless global services—whether you&rsquo;re based in Bengaluru or Boston.
+</p>
+
       </div>
     </main>
   );

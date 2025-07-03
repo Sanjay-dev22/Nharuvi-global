@@ -68,12 +68,13 @@ export default function BusinessSetupPage() {
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">
           Global, Transparent, Compliant
         </h2>
-        <p className="text-gray-700">
-          Whether you're a startup expanding into India or an Indian enterprise
-          scaling globally, we ensure compliance with ROC, MCA, FEMA, RBI, and
-          other regulatory bodies. Trust us to simplify your governance and
-          legal operations.
-        </p>
+       <p className="text-gray-700">
+  Whether you&rsquo;re a startup expanding into India or an Indian enterprise
+  scaling globally, we ensure compliance with ROC, MCA, FEMA, RBI, and
+  other regulatory bodies. Trust us to simplify your governance and
+  legal operations.
+</p>
+
       </section>
 
       <section className="bg-gray-50 border border-gray-200 rounded-lg p-6">

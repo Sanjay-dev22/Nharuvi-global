@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { ChevronDown, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useState } from 'react';
 
 const navItems = [
@@ -33,7 +33,7 @@ const services = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
+  
 
   return (
     <header className="bg-[#121926] text-white sticky top-0 z-50 shadow">

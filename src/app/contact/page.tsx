@@ -9,8 +9,9 @@ export default function ContactPage() {
     <main className="max-w-4xl mx-auto py-16 px-6">
       <h1 className="text-4xl font-bold mb-6 text-gray-900">Contact Us</h1>
       <p className="text-gray-600 mb-8">
-        We'd love to hear from you. Whether you have a question about our services or need help with your financial goals, our team is ready to help.
+         We&rsquo;d love to hear from you. Whether you have a question about our services or need help with your financial goals, our team is ready to help.
       </p>
+
 
       <div className="grid md:grid-cols-2 gap-8">
         {/* Contact Details */}

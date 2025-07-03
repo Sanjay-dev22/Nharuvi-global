@@ -5,7 +5,7 @@ export default function AboutPage() {
       <section className="mb-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">About Nharuvi Global</h1>
         <p className="text-lg text-gray-600 max-w-2xl">
-          Built for modern business. Driven by accuracy, automation, and trust. We're redefining accounting & compliance through technology and transparency.
+          Built for modern business. Driven by accuracy, automation, and trust. We&rsquo;re redefining accounting & compliance through technology and transparency.
         </p>
       </section>
 
